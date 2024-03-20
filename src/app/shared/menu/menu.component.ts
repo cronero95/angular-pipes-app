@@ -12,8 +12,34 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
     this.menuItems = [
-      {label: 'Hello', icon: 'pi pi-fw pi-plus'},
-      {label: 'World', icon: 'pi pi-fw pi-plus'}
+      {
+        label: 'Angular Pipes',
+        icon: 'pi pi-desktop',
+        items: [
+          {
+            label: 'Text and Dates',
+            icon: 'pi pi-align-left'
+          },
+          {
+            label: 'Numbers',
+            icon: 'pi pi-dollar'
+          },
+          {
+            label: 'Uncommoms',
+            icon: 'pi pi-globe'
+          }
+        ]
+      },
+      {
+        label: 'Personalized Pipes',
+        icon: 'pi pi-cog',
+        items: [
+          {
+            label: 'Another element',
+            icon: 'pi pi-cog'
+          }
+        ]
+      }
     ]
   }
 }
