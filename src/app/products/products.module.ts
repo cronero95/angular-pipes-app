@@ -6,6 +6,7 @@ import { ProductsRoutingModule } from './products-routing.module';
 import { BasicsPageComponent } from './pages/basics-page/basics-page.component';
 import { NumbersPageComponent } from './pages/numbers-page/numbers-page.component';
 import { UncommonsPageComponent } from './pages/uncommons-page/uncommons-page.component';
+import { PrimeNGModule } from '../prime-ng/prime-ng.module';
 
 
 
@@ -18,6 +19,7 @@ import { UncommonsPageComponent } from './pages/uncommons-page/uncommons-page.co
   imports: [
     CommonModule,
     ProductsRoutingModule,
+    PrimeNGModule
   ]
 })
 export class ProductsModule { }
