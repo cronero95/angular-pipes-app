@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PrimeNGModule } from '../prime-ng/prime-ng.module';
+import { RouterModule } from '@angular/router';
 
 import { MenuComponent } from './menu/menu.component';
 
@@ -13,7 +14,8 @@ import { MenuComponent } from './menu/menu.component';
   ],
   imports: [
     CommonModule,
-    PrimeNGModule
+    PrimeNGModule,
+    RouterModule
   ],
   exports: [
     MenuComponent
