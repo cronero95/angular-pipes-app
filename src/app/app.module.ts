@@ -8,6 +8,12 @@ import { ProductsModule } from './products/products.module';
 
 import { AppComponent } from './app.component';
 
+import localeEsCo from "@angular/common/locales/es-CO";
+import localeFrCa from "@angular/common/locales/fr-CA";
+import { registerLocaleData } from "@angular/common";
+
+registerLocaleData(localeEsCo);
+registerLocaleData(localeFrCa);
 
 @NgModule({
   declarations: [
