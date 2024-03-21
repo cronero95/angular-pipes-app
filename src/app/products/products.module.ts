@@ -9,6 +9,8 @@ import { NumbersPageComponent } from './pages/numbers-page/numbers-page.componen
 import { UncommonsPageComponent } from './pages/uncommons-page/uncommons-page.component';
 import { CustomsPageComponent } from './pages/customs-page/customs-page.component';
 
+import { ToggleCasePipe } from './pipes/toggle-case.pipe';
+
 
 
 @NgModule({
@@ -16,7 +18,8 @@ import { CustomsPageComponent } from './pages/customs-page/customs-page.componen
     BasicsPageComponent,
     NumbersPageComponent,
     UncommonsPageComponent,
-    CustomsPageComponent
+    CustomsPageComponent,
+    ToggleCasePipe
   ],
   imports: [
     CommonModule,
