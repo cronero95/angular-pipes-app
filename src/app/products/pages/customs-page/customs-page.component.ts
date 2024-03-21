@@ -10,6 +10,8 @@ export class CustomsPageComponent {
 
   public isUpperCase: boolean = false;
 
+  public orderBy: keyof Hero | '' = '';
+
   public heroes: Hero[] = [
     {
       name: 'Hulk',
@@ -41,4 +43,9 @@ export class CustomsPageComponent {
   toggleUpperCase(): void {
     this.isUpperCase = !this.isUpperCase;
   }
+
+  changeOrder(orderValue: keyof Hero | '' = ''): void {
+    this.orderBy = orderValue;
+  }
+
 }

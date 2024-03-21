@@ -11,6 +11,7 @@ import { CustomsPageComponent } from './pages/customs-page/customs-page.componen
 
 import { ToggleCasePipe } from './pipes/toggle-case.pipe';
 import { CanFlyPipe } from './pipes/can-fly.pipe';
+import { SortByPipe } from './pipes/sort-by.pipe';
 
 
 
@@ -21,7 +22,8 @@ import { CanFlyPipe } from './pipes/can-fly.pipe';
     UncommonsPageComponent,
     CustomsPageComponent,
     ToggleCasePipe,
-    CanFlyPipe
+    CanFlyPipe,
+    SortByPipe
   ],
   imports: [
     CommonModule,
