@@ -10,6 +10,7 @@ import { UncommonsPageComponent } from './pages/uncommons-page/uncommons-page.co
 import { CustomsPageComponent } from './pages/customs-page/customs-page.component';
 
 import { ToggleCasePipe } from './pipes/toggle-case.pipe';
+import { CanFlyPipe } from './pipes/can-fly.pipe';
 
 
 
@@ -19,7 +20,8 @@ import { ToggleCasePipe } from './pipes/toggle-case.pipe';
     NumbersPageComponent,
     UncommonsPageComponent,
     CustomsPageComponent,
-    ToggleCasePipe
+    ToggleCasePipe,
+    CanFlyPipe
   ],
   imports: [
     CommonModule,
