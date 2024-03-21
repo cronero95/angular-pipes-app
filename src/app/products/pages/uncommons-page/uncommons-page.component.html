@@ -9,11 +9,31 @@
   <div class="col-12 md:col-6">
     <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
 
+      <p>
+        Greetings {{ gender | i18nSelect:invitationMap }}. {{ name }}, it's a pleasure to invite you to our event.
+      </p>
+
+      <p-button
+        (click)="changeClient()"
+        label="Change Guest"
+      >
+      </p-button>
+
     </p-fieldset>
   </div>
 
   <div class="col-12 md:col-6">
     <p-fieldset legend="i18nPLural Pipe" [toggleable]="true">
+
+      <p>
+        Currently {{ clients.length | i18nPlural:clientsMap }} waiting.
+      </p>
+
+      <p-button
+        (click)="serveClient()"
+        label="Serve Client"
+      >
+      </p-button>
 
     </p-fieldset>
   </div>
@@ -21,11 +41,19 @@
   <div class="col-12 md:col-6">
     <p-fieldset legend="Slice Pipe" [toggleable]="true">
 
+      <b>Original</b>
+      <pre>{{ clients }}</pre>
+
+      <b>Slice:1:4</b>
+      <pre>{{ clients | slice:1:4 }}</pre>
+
     </p-fieldset>
   </div>
 
   <div class="col-12 md:col-6">
     <p-fieldset legend="JSON Pipe" [toggleable]="true">
+
+      {{ person | json }}
 
     </p-fieldset>
   </div>
@@ -33,11 +61,23 @@
   <div class="col-12 md:col-6">
     <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
 
+      <p *ngFor="let value of person | keyvalue">
+        {{ value.key }}: {{ value.value }}
+      </p>
+
     </p-fieldset>
   </div>
 
   <div class="col-12 md:col-6">
     <p-fieldset legend="Async Pipe" [toggleable]="true">
+
+      <pre>
+        {{ myObservableTimer | async }}
+      </pre>
+
+      <pre>
+        {{ promiseValue | async }}
+      </pre>
 
     </p-fieldset>
   </div>
